@@ -1,0 +1,72 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    max-width: 600px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.flex-container > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container > div > input {
+    margin: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+.flex-container > div > input:focus {
+    border: 1px solid #48abe0;
+    box-shadow: 0 0 5px 1px #48abe0;
+    transition: 0.2s;
+    outline: none;
+}
+.flex-container > div > input.checkbox {
+    margin: 5px;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 6px;
+    width: auto;
+}        
+.flex-container > div > p {
+    width: 75%;
+}
+.flex-container > div > button {
+    margin: 5px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    color: White;
+}
+button.register {
+    background-color: RoyalBlue;
+}
+button.sign-in {
+    background-color: MediumSeaGreen;
+}
+span.thick {
+    font-weight: bold;
+}
+span.register {
+    margin: 1px;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: RoyalBlue;
+    color: White;
+}
+a.no-decoration {
+    text-decoration: none;
+    color: Blue;
+}
+@media (max-width: 800px) {
+    .flex-container > div {
+        flex-direction: column;
+    }
+}
