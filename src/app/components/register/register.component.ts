@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [ReactiveFormsModule],
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
 
@@ -22,10 +22,21 @@ export class RegisterComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirm_password: ['', Validators.required]
-    });
+    }, { validators: this.passwordMatchValidator() });  // Apply the custom validator here
   }
 
-  navigateToSignIn() {}
+  // Inline custom validator function
+  passwordMatchValidator(): ValidatorFn {
+    return (control: AbstractControl): ValidationErrors | null => {
+      const password = control.get('password')?.value;
+      const confirmPassword = control.get('confirm_password')?.value;
+
+      if (password !== confirmPassword) {
+        return { passwordMismatch: true };
+      }
+      return null;
+    };
+  }
 
   onSubmit() {
     if (this.registerForm.valid) {
@@ -34,5 +45,4 @@ export class RegisterComponent implements OnInit {
       alert('Please fill out the form correctly before submitting.');
     }
   }
-
 }
