@@ -1,43 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
-</head>
-<body>
-    <div  class="flex-container">
-        <header>
-            <h1>Sign Up</h1>
-        </header>
-        <div>
-            <input placeholder="First Name">
-            <input placeholder="Last Name">
-        </div>
-        <div>
-            <input placeholder="Mobile No.">
-        </div>
-        <div>
-            <input placeholder="Email Address">
-        </div>
-        <div>
-            <input placeholder="Password">
-            <input placeholder="Confirm Password">
-        </div>
-        <div>
-            <div>
-                <input class="checkbox" type="checkbox">
-                <span class="thick">
-                    I Agree
-                </span>
-            </div>
-            <p class="checkbox">By clicking <span class="register">Register</span>, you agree to the <a class="no-decoration" href="https://www.google.com" target="_blank">Terms and Conditions</a> set out by this site, including our Cookie Use.</p>
-        </div>
-        <div>
-            <button class="register">Register</button>
-            <button class="sign-in">Sign In</button>
-        </div>
+<form class="flex-container" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    
+    <!-- First Name and Last Name -->
+    <div>
+        <input formControlName="first_name" placeholder="First Name" type="text">
+        <input formControlName="last_name" placeholder="Last Name" type="text">
     </div>
+    
+    <!-- Mobile Number -->
+    <div>
+        <input formControlName="mobile_no" placeholder="Mobile No." type="text">
+    </div>
+    
+    <!-- Email Address -->
+    <div>
+        <input formControlName="email" placeholder="Email Address" type="email">
+    </div>
+    
+    <!-- Password and Confirm Password -->
+    <div>
+        <input formControlName="password" placeholder="Password" type="password">
+        <input formControlName="confirm_password" placeholder="Confirm Password" type="password">
+    </div>
+    
 
-</body>
-</html>
+    
+    <!-- Buttons -->
+    <div>
+        <button class="register">Register</button>
+        <button type="submit" class="sign-in">Sign In</button>
+    </div>
+</form>
