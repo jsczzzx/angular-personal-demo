@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-register',
   standalone: true,
   imports: [ReactiveFormsModule],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.css'
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
 
-  signupForm!: FormGroup;
+  registerForm!: FormGroup;
 
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
-    this.signupForm = this.fb.group({
+    this.registerForm = this.fb.group({
       first_name: ['', Validators.required],
       last_name: ['', Validators.required],
       mobile_no: ['', [Validators.required, Validators.pattern('^[0-9]*$')]],
@@ -28,9 +28,8 @@ export class LoginComponent implements OnInit {
   navigateToSignIn() {}
 
   onSubmit() {
-    if (this.signupForm.valid) {
-      // Use JSON.stringify to convert the form values object into a string for alert
-      alert(JSON.stringify(this.signupForm.value, null, 2));
+    if (this.registerForm.valid) {
+      alert(JSON.stringify(this.registerForm.value, null, 2));
     } else {
       alert('Please fill out the form correctly before submitting.');
     }

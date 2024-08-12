@@ -1,0 +1,22 @@
+<form class="flex-container" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <header>
+        <h1>Sign In</h1>
+    </header>
+
+    <!-- Email Address -->
+    <div>
+        <input formControlName="email" placeholder="Email Address" type="email">
+    </div>
+    
+    <!-- Password and Confirm Password -->
+    <div>
+        <input formControlName="password" placeholder="Password" type="password">
+    </div>
+    
+
+    
+    <!-- Buttons -->
+    <div>
+        <button type="submit" class="sign-in">Sign In</button>
+    </div>
+</form>
