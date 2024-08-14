@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -12,7 +14,7 @@ export class RegisterComponent implements OnInit {
 
   registerForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
     this.registerForm = this.fb.group({
@@ -40,7 +42,18 @@ export class RegisterComponent implements OnInit {
 
   onSubmit() {
     if (this.registerForm.valid) {
-      alert(JSON.stringify(this.registerForm.value, null, 2));
+      //alert(JSON.stringify(this.registerForm.value, null, 2));
+      this.authService.register(this.registerForm.value).subscribe({
+        next: (value) => {
+          console.log(value);
+          alert('Registered successfully!');
+          this.router.navigate(['/']);
+        },
+        error: (err) => {
+          console.log(err.message);
+          alert('There is something wrong...');
+        },
+      })
     } else {
       alert('Please fill out the form correctly before submitting.');
     }

@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { FeedComponent } from './components/feed/feed.component';
 
 export const routes: Routes = [
     {
@@ -16,5 +17,8 @@ export const routes: Routes = [
         redirectTo: '/login', 
         pathMatch: 'full' 
     },
-
+    {
+        path: 'feed',
+        component: FeedComponent
+    }
 ];
