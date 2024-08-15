@@ -41,7 +41,9 @@ export class LoginComponent implements OnInit {
         this.signupForm.get('password')?.value
       ).subscribe({
         next: (value) => {
-          console.log(value);
+          //console.log(value);
+          //alert(value['token']);
+          localStorage.setItem('token', value['token']);
           this.router.navigate(['/feed']);
         },
         error: (err) => {

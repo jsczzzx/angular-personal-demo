@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { FeedComponent } from './components/feed/feed.component';
+import { AuthGuard } from './auth/auth.guard';
 
 export const routes: Routes = [
     {
@@ -19,6 +20,7 @@ export const routes: Routes = [
     },
     {
         path: 'feed',
-        component: FeedComponent
+        component: FeedComponent,
+        canActivate: [AuthGuard]
     }
 ];
