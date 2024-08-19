@@ -3,6 +3,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { AuthGuard } from './auth/auth.guard';
+import { HeroComponent } from './components/hero/hero.component';
 
 export const routes: Routes = [
     {
@@ -22,5 +23,9 @@ export const routes: Routes = [
         path: 'feed',
         component: FeedComponent,
         canActivate: [AuthGuard]
+    },
+    {
+        path: 'hero',
+        component: HeroComponent
     }
 ];

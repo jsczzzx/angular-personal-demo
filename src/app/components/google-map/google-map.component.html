@@ -1,0 +1,23 @@
+<div class="map-container">
+    <google-map
+      *ngIf="center"
+      [center]="center"
+      [zoom]="zoom"
+      [options]="mapOptions"
+      height="400px"
+      width="100%">
+      
+    <!-- Current location marker with a blue icon -->
+    <map-marker *ngIf="currentLocationMarker" [options]="currentLocationMarker"></map-marker>
+    
+    <!-- Markers for all other locations with a red icon -->
+    <map-marker *ngFor="let marker of locationMarkers" [options]="marker"></map-marker>
+  </google-map>
+  
+    <!-- Zoom controls -->
+    <div class="zoom-controls">
+      <button (click)="zoomIn()">+</button>
+      <button (click)="zoomOut()">-</button>
+    </div>
+  </div>
+  
