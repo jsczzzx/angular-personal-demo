@@ -1,0 +1,16 @@
+<p>{{config.data.restaurant.name}}</p>
+@for (item of config.data.restaurant.dishes; track item._id) {
+    <div class="row">
+        <div class="left">
+            <p>{{item.name}}: ${{item.price}}</p>
+        </div>
+        <div class="right">
+            <button (click)="decrement(item)">-</button>
+            <input type="number" [(ngModel)]="findOrderItem(item)!.quantity" />
+            <button (click)="increment(item)">+</button>
+        </div>
+
+    </div>
+
+}
+<button (click)="submitOrder()">Submit</button>

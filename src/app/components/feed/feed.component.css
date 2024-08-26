@@ -7,3 +7,9 @@ button {
     color: White;
     background-color: coral;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

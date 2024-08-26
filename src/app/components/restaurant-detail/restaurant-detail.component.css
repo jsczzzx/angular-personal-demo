@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    flex: 1.5;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+input {
+    width: 40px;
+}

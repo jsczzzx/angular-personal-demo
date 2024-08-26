@@ -1,18 +1,27 @@
-@for (item of restaurants; track item) {
-    <app-restaurant [restaurant]="item" [curLocation]="curLocation"></app-restaurant>
-}
+<div class="container">
+    @if (curLocation) {
+        @for (item of restaurants; track item) {
+            <app-restaurant [restaurant]="item" [curLocation]="curLocation"></app-restaurant>
+        }
+    }
+    
+    
+    <button (click)="onLogout()">Log out</button>
+    
+    <button (click)="onGetAllUser()">Get All Users</button>
+    
+    <button (click)="onGetToken()">Get Token</button>
+    
+    <button (click)="onGetLocation()">Get Location</button>
 
-<button (click)="onLogout()">Log out</button>
+    <button (click)="onRegisterRestaurants()">Upload Restaurants</button>
 
-<button (click)="onGetAllUser()">Get All Users</button>
-
-<button (click)="onGetToken()">Get Token</button>
-
-<button (click)="onGetLocation()">Get Location</button>
-
-<div>
-    <form (ngSubmit)="onSubmit()">
-      <input type="text" [(ngModel)]="address" name="inputValue" placeholder="Enter something" required>
-      <button type="submit">Submit</button>
-    </form>
+    
+    <div>
+        <form (ngSubmit)="onSubmit()">
+          <input type="text" [(ngModel)]="address" name="inputValue" placeholder="Enter something" required>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
 </div>
+

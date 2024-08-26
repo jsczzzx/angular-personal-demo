@@ -69,7 +69,7 @@ export class GeolocationService {
 
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     const distance = R * c; // Distance in miles
-    alert(distance)
+    //alert(distance)
     return distance;
   }
   
