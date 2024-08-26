@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../interfaces/user.interface';
 import { Observable } from 'rxjs';
-import { jwtDecode } from "jwt-decode";
 import { Restaurant } from '../interfaces/restaurant.interface';
+import { BehaviorSubject } from 'rxjs';
+import { Order } from '../interfaces/order.interface';
 
 
 @Injectable({
@@ -19,6 +19,22 @@ export class OrderService {
     return this.http.get<Restaurant[]>(`${this.apiUrl}/restaurants`);
   }
 
+  private ordersSubject = new BehaviorSubject<Order[]>([]);
 
+  // Add a new order to the array
+  addOrder(order: Order) {
+    const currentOrders = this.ordersSubject.value;
+    this.ordersSubject.next([...currentOrders, order]);
+  }
+
+  // Get the array of orders as an observable
+  getOrders() {
+    return this.ordersSubject.asObservable();
+  }
+
+  // Optionally, clear all orders
+  clearOrders() {
+    this.ordersSubject.next([]);
+  }
   
 }

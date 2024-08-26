@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space between the content and the buttons */
+    width: 300px;
+    min-height: 200px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,5 +1,5 @@
 <div class="card" (click)="onClick()">
-    <img src="../../../assets/images/a.jpg" width="400" height="400">
+    <img [src]="imageSrc" width="400" height="400">
     <div>
         <h3>{{restaurant.name}}</h3>
         <p>{{distance}}  mi</p>

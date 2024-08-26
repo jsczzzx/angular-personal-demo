@@ -1,3 +1,5 @@
+<button (click)="onCartClicked()">Cart</button>
+
 <div class="container">
     @if (curLocation) {
         @for (item of restaurants; track item) {
@@ -15,6 +17,8 @@
     <button (click)="onGetLocation()">Get Location</button>
 
     <button (click)="onRegisterRestaurants()">Upload Restaurants</button>
+
+
 
     
     <div>

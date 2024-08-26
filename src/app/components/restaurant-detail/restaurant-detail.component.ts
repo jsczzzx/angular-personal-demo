@@ -4,6 +4,8 @@ import { Restaurant, Dish } from '../../interfaces/restaurant.interface';
 import { Order, OrderItem } from '../../interfaces/order.interface';
 import { DynamicDialogConfig, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { AuthService } from '../../services/auth.service';
+import { ButtonModule } from 'primeng/button';
+import { OrderService } from '../../services/order.service';
 
 
 @Component({
@@ -11,6 +13,7 @@ import { AuthService } from '../../services/auth.service';
   standalone: true,
   imports: [    
     FormsModule,
+    ButtonModule
   ],
   templateUrl: './restaurant-detail.component.html',
   styleUrl: './restaurant-detail.component.css'
@@ -22,7 +25,12 @@ export class RestaurantDetailComponent implements OnInit {
   orderItems: OrderItem[] = [];
 
 
-  constructor(public ref: DynamicDialogRef, public config: DynamicDialogConfig, private authService: AuthService) {}
+  constructor(
+    public ref: DynamicDialogRef, 
+    public config: DynamicDialogConfig, 
+    private authService: AuthService,
+    private orderService: OrderService
+  ) {}
 
   ngOnInit(): void {
     // Initialize the orderItems array with each dish and a quantity of 0
@@ -70,7 +78,9 @@ export class RestaurantDetailComponent implements OnInit {
     // Construct the order
     const order: Order = {
       userId: this.userId,  // Assuming you have the userId
+      userName: localStorage.getItem('username')!,
       restaurantId: this.restaurant._id!,  // Get the restaurant ID from the data
+      restaurantName: this.restaurant.name,
       items: filteredOrderItems,
       totalPrice: totalPrice,
       createdAt: new Date(),
@@ -79,6 +89,7 @@ export class RestaurantDetailComponent implements OnInit {
     };
 
     // Submit the order (assuming you have a service to handle the submission)
-    alert(JSON.stringify(order));
+    //alert(JSON.stringify(order));
+    this.orderService.addOrder(order);
   }
 }

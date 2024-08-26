@@ -3,7 +3,9 @@ import { Dish } from "./restaurant.interface";
 export interface Order {
     _id?: string,
     userId: string,
+    userName: string,
     restaurantId: string,
+    restaurantName: string,
     items: OrderItem[],
     totalPrice: number,
     createdAt: Date,

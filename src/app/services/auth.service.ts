@@ -22,8 +22,12 @@ export class AuthService {
     return this.http.post<any>(`${this.apiUrl}/login`, { email, password });
   }
 
-  getAllUsers(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/users`);
+  getAllUsers(): Observable<User[]> {
+    return this.http.get<User[]>(`${this.apiUrl}/users`);
+  }
+
+  getUserById(_id: string): Observable<User> {
+    return this.http.get<User>(`${this.apiUrl}/users/${_id}`);
   }
 
   // Method to check if the token is valid

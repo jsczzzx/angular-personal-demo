@@ -8,11 +8,15 @@ import { RestaurantComponent } from '../restaurant/restaurant.component';
 import { AdminService } from '../../services/admin.service';
 import { OrderService } from '../../services/order.service';
 import { Restaurant } from '../../interfaces/restaurant.interface';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { CartComponent } from '../cart/cart.component';
+
 
 @Component({
   selector: 'app-feed',
   standalone: true,
   imports: [GoogleMapComponent, RestaurantComponent, FormsModule],
+  providers: [DialogService],
   templateUrl: './feed.component.html',
   styleUrl: './feed.component.css'
 })
@@ -22,13 +26,17 @@ export class FeedComponent implements OnInit {
 
   address = '';
   curLocation!: GeolocationPosition;
-  
+
+  ref: DynamicDialogRef | undefined;
+
+
   constructor(
     private router: Router, 
     private authService: AuthService, 
     private geolocationService: GeolocationService, 
     private adminService: AdminService,
-    private orderService: OrderService
+    private orderService: OrderService,
+    private dialogService: DialogService
   ) {}
 
   ngOnInit(): void {
@@ -38,6 +46,11 @@ export class FeedComponent implements OnInit {
     });
     this.orderService.getAllRestaurants().subscribe(res=>{
       this.restaurants = res;
+    });
+
+    let userId = this.authService.getUserIdFromToken(localStorage.getItem('token')!);
+    this.authService.getUserById(userId).subscribe(res=>{
+      localStorage.setItem('username', res.username);
     });
 
   }
@@ -72,5 +85,13 @@ export class FeedComponent implements OnInit {
         console.log('success');
       })
     }
+  }
+
+  onCartClicked() {
+    this.ref = this.dialogService.open(
+      CartComponent, {
+        header: 'Cart',
+        data: {}
+      });
   }
 }

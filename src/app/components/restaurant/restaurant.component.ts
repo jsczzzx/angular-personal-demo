@@ -26,6 +26,7 @@ export class RestaurantComponent implements OnInit {
 
   ref: DynamicDialogRef | undefined;
 
+  imageSrc: string = '';
 
   constructor(private geoLocationService: GeolocationService, private dialogService: DialogService) {}
 
@@ -35,6 +36,13 @@ export class RestaurantComponent implements OnInit {
       //alert(JSON.stringify(this.curLocation));
       this.distance = res.toFixed(1);
     })
+    this.imageSrc = this.getRandomImage();
+  }
+
+  // Function to generate a random image path
+  getRandomImage(): string {
+    const randomChar = String.fromCharCode(97 + Math.floor(Math.random() * 26)); // Generates a char from 'a' to 'z'
+    return `../../../assets/images/${randomChar}.jpg`;
   }
 
   onClick() {

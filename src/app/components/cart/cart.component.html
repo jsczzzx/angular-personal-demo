@@ -1,1 +1,15 @@
-<p>cart works!</p>
+<div class="container">
+    @for (order of orders; track order._id) {
+        <h4>{{order.restaurantName}}</h4>
+        @for (item of order.items; track item._id) {
+            <p>{{item._id}}: {{item.quantity}}</p>
+        }
+    }
+    <div class="button-container">
+        <p-button label="Submit" (onClick)="onSubmit()"></p-button>
+        <p-button label="Clear" (onClick)="onClear()"></p-button>
+    </div>
+</div>
+
+
+
