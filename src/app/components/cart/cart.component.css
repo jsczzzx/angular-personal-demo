@@ -9,4 +9,23 @@
 .button-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between elements */
+    align-items: center;
+}
+
+.dish-name {
+    flex-grow: 1; /* This will take up the remaining space */
+}
+
+.quantity {
+    margin-right: 20px; /* Adjust this value to suit your needs */
+}
+
+.price {
+    margin-left: auto; /* Align the price to the right */
 }

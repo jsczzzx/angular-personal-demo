@@ -36,5 +36,9 @@ export class OrderService {
   clearOrders() {
     this.ordersSubject.next([]);
   }
+
+  submitOrder(order: Order): Observable<any> {
+    return this.http.post<Order>(`${this.apiUrl}/orders`, order);
+  }
   
 }

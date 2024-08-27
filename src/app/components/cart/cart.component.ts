@@ -15,6 +15,7 @@ export class CartComponent implements OnInit {
 
   orders: Order[] = [];
 
+  sum: number = 0;
 
   constructor(private orderService: OrderService, private authService: AuthService) {
 
@@ -23,6 +24,9 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
     this.orderService.getOrders().subscribe(res=>{
       this.orders = res;
+      for (let i = 0; i < this.orders.length; i++) {
+        this.sum += this.orders[i].totalPrice;
+      }
     });
   }
 
@@ -30,8 +34,17 @@ export class CartComponent implements OnInit {
     return JSON.stringify(input);
   }
 
-  onSubmit() {}
+  onSubmit() {
+    for (let i = 0; i < this.orders.length; i++) {
+      this.orderService.submitOrder(this.orders[i]).subscribe(res=>{
+        console.log(res);
+      })
+    }
+  }
 
-  onClear() {}
+  onClear() {
+    this.orders = [];
+    this.sum = 0;
+  }
 
 }

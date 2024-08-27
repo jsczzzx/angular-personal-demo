@@ -23,7 +23,7 @@ export class RestaurantDetailComponent implements OnInit {
   restaurant!: Restaurant;
   userId = ''; // Assume you have this data
   orderItems: OrderItem[] = [];
-
+  totalPrice: number = 0;
 
   constructor(
     public ref: DynamicDialogRef, 
@@ -48,6 +48,7 @@ export class RestaurantDetailComponent implements OnInit {
     const orderItem = this.findOrderItem(dish);
     if (orderItem) {
       orderItem.quantity++;
+      this.totalPrice += orderItem.dish.price;
     }
   }
 
@@ -55,6 +56,7 @@ export class RestaurantDetailComponent implements OnInit {
     const orderItem = this.findOrderItem(dish);
     if (orderItem && orderItem.quantity > 0) {
       orderItem.quantity--;
+      this.totalPrice -= orderItem.dish.price;
     }
   }
 
@@ -62,34 +64,30 @@ export class RestaurantDetailComponent implements OnInit {
     return this.orderItems.find(item => item.dish._id === dish._id);
   }
 
-  calculateTotalPrice(): number {
-    return this.orderItems
-      .filter(item => item.quantity > 0)
-      .reduce((total, item) => total + (item.quantity * item.dish.price), 0);
-  }
+
 
   submitOrder() {
     // Filter out items with quantity > 0
     const filteredOrderItems: OrderItem[] = this.orderItems.filter(item => item.quantity > 0);
 
-    // Calculate the total price
-    const totalPrice = this.calculateTotalPrice();
-
     // Construct the order
     const order: Order = {
       userId: this.userId,  // Assuming you have the userId
-      userName: localStorage.getItem('username')!,
+      userName: localStorage.getItem('userName')!,
       restaurantId: this.restaurant._id!,  // Get the restaurant ID from the data
       restaurantName: this.restaurant.name,
       items: filteredOrderItems,
-      totalPrice: totalPrice,
+      totalPrice: this.totalPrice,
       createdAt: new Date(),
       updatedAt: new Date(),
       status: 'Pending'  // Initial order status
     };
 
     // Submit the order (assuming you have a service to handle the submission)
-    //alert(JSON.stringify(order));
+    alert(JSON.stringify(order));
     this.orderService.addOrder(order);
+    this.ref.close();
+    //alert(JSON.stringify(this.config.data));
+    //this.config.data.ref.close();
   }
 }

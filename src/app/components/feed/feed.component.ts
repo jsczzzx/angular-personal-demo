@@ -50,7 +50,7 @@ export class FeedComponent implements OnInit {
 
     let userId = this.authService.getUserIdFromToken(localStorage.getItem('token')!);
     this.authService.getUserById(userId).subscribe(res=>{
-      localStorage.setItem('username', res.username);
+      localStorage.setItem('userName', res.userName);
     });
 
   }

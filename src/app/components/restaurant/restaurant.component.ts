@@ -50,7 +50,7 @@ export class RestaurantComponent implements OnInit {
       RestaurantDetailComponent, {
         header: 'Select your item',
         data: {
-          restaurant: this.restaurant
+          restaurant: this.restaurant,
         }
       });
   }
@@ -58,6 +58,7 @@ export class RestaurantComponent implements OnInit {
   openDialog(): void {
 
   }
+  
   
 
 }

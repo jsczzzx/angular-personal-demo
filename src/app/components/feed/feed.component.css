@@ -13,3 +13,15 @@ button {
     flex-direction: column;
     align-items: center;
 }
+
+.restaurant-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-around; /* Align items with space around */
+    max-width: 1000px; /* Adjust width based on your preference */
+}
+
+.restaurant-cards app-restaurant {
+    flex-basis: calc(50% - 20px); /* Each card will take up 50% of the width minus margin */
+    margin: 10px; /* Add some margin between cards */
+}
