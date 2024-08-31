@@ -3,6 +3,8 @@ export interface Restaurant {
     name: string,
     telephone: string,
     address: string,
+    coordinates: number[],
+    type: string[],
     dishes: Dish[],
 }
 

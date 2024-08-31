@@ -1,0 +1,2662 @@
+[
+    {
+       "name":"Harbor Breeze",
+       "telephone":"(617)543-8921",
+       "address":"150 Northern Ave, Boston, MA 02210",
+       "coordinates":[
+          42.3522,
+          -71.0458
+       ],
+       "type":[
+          "Seafood",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Lobster Roll",
+             "price":28
+          },
+          {
+             "name":"Fried Calamari",
+             "price":16
+          },
+          {
+             "name":"Clam Chowder",
+             "price":12
+          }
+       ]
+    },
+    {
+       "name":"Neptune's Catch",
+       "telephone":"(617)555-4321",
+       "address":"63 Salem St, Boston, MA 02113",
+       "coordinates":[
+          42.3630,
+          -71.0545
+       ],
+       "type":[
+          "Seafood",
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Oysters Rockefeller",
+             "price":22
+          },
+          {
+             "name":"Crab Cakes",
+             "price":19
+          },
+          {
+             "name":"Grilled Swordfish",
+             "price":32
+          }
+       ]
+    },
+    {
+       "name":"Boston's Bounty",
+       "telephone":"(617)789-1234",
+       "address":"25 Northern Ave, Boston, MA 02210",
+       "coordinates":[
+          42.3505,
+          -71.0482
+       ],
+       "type":[
+          "American",
+          "Pizza"
+       ],
+       "dishes":[
+          {
+             "name":"Baked Haddock",
+             "price":27
+          },
+          {
+             "name":"Mussels Marinara",
+             "price":20
+          },
+          {
+             "name":"Pepperoni Pizza",
+             "price":15
+          }
+       ]
+    },
+    {
+       "name":"The Lobster Shack",
+       "telephone":"(617)451-6754",
+       "address":"300 Seaport Blvd, Boston, MA 02210",
+       "coordinates":[
+          42.3499,
+          -71.0414
+       ],
+       "type":[
+          "Seafood"
+       ],
+       "dishes":[
+          {
+             "name":"Steamed Lobster",
+             "price":35
+          },
+          {
+             "name":"Scallop Risotto",
+             "price":29
+          },
+          {
+             "name":"Coconut Shrimp",
+             "price":17
+          }
+       ]
+    },
+    {
+       "name":"Mariner's Delight",
+       "telephone":"(617)953-1123",
+       "address":"220 Clarendon St, Boston, MA 02116",
+       "coordinates":[
+          42.3525,
+          -71.0740
+       ],
+       "type":[
+          "Seafood",
+          "French"
+       ],
+       "dishes":[
+          {
+             "name":"Grilled Mahi Mahi",
+             "price":26
+          },
+          {
+             "name":"Lobster Bisque",
+             "price":15
+          },
+          {
+             "name":"Crab Legs",
+             "price":33
+          }
+       ]
+    },
+    {
+       "name":"Seaside Grill",
+       "telephone":"(617)777-6458",
+       "address":"80 Atlantic Ave, Boston, MA 02110",
+       "coordinates":[
+          42.3592,
+          -71.0509
+       ],
+       "type":[
+          "Seafood",
+          "Burgers"
+       ],
+       "dishes":[
+          {
+             "name":"Fish & Chips",
+             "price":20
+          },
+          {
+             "name":"Grilled Octopus",
+             "price":24
+          },
+          {
+             "name":"Cheeseburger",
+             "price":14
+          }
+       ]
+    },
+    {
+       "name":"Tidal Wave",
+       "telephone":"(617)802-4789",
+       "address":"300 Congress St, Boston, MA 02210",
+       "coordinates":[
+          42.3512,
+          -71.0490
+       ],
+       "type":[
+          "American",
+          "Salad"
+       ],
+       "dishes":[
+          {
+             "name":"Caesar Salad",
+             "price":12
+          },
+          {
+             "name":"Garlic Shrimp",
+             "price":23
+          },
+          {
+             "name":"Blackened Tilapia",
+             "price":21
+          }
+       ]
+    },
+    {
+       "name":"Dockside Diner",
+       "telephone":"(617)932-9890",
+       "address":"10 Boston Wharf Rd, Boston, MA 02210",
+       "coordinates":[
+          42.3477,
+          -71.0435
+       ],
+       "type":[
+          "Cafes",
+          "Desserts"
+       ],
+       "dishes":[
+          {
+             "name":"Chocolate Cake",
+             "price":8
+          },
+          {
+             "name":"Baked Cod",
+             "price":26
+          },
+          {
+             "name":"Lobster Mac & Cheese",
+             "price":20
+          }
+       ]
+    },
+    {
+       "name":"Poseidon's Plate",
+       "telephone":"(617)823-7654",
+       "address":"110 Beverly St, Boston, MA 02114",
+       "coordinates":[
+          42.3640,
+          -71.0598
+       ],
+       "type":[
+          "Seafood",
+          "Mediterranean"
+       ],
+       "dishes":[
+          {
+             "name":"Crab Bisque",
+             "price":17
+          },
+          {
+             "name":"Seared Tuna",
+             "price":28
+          },
+          {
+             "name":"Shrimp Po' Boy",
+             "price":22
+          }
+       ]
+    },
+    {
+       "name":"Ocean's Plate",
+       "telephone":"(781)398-0000",
+       "address":"314 Moody St, Waltham, MA 02453",
+       "coordinates":[
+          42.3770,
+          -71.0914
+       ],
+       "type":[
+          "Japanese",
+          "Sushi",
+          "Seafood"
+       ],
+       "dishes":[
+          {
+             "name":"Grilled Salmon",
+             "price":25
+          },
+          {
+             "name":"Shrimp Cocktail",
+             "price":15
+          },
+          {
+             "name":"Seafood Paella",
+             "price":30
+          }
+       ]
+    },
+    {
+       "name":"Bayview Bistro",
+       "telephone":"(617)943-7621",
+       "address":"500 Commonwealth Ave, Boston, MA 02215",
+       "coordinates":[
+          42.3483,
+          -71.0958
+       ],
+       "type":[
+          "Seafood",
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Clam Linguine",
+             "price":23
+          },
+          {
+             "name":"Grilled Halibut",
+             "price":31
+          },
+          {
+             "name":"Shrimp Tempura",
+             "price":19
+          }
+       ]
+    },
+    {
+       "name":"Seafarer's Cove",
+       "telephone":"(617)676-3492",
+       "address":"1 Long Wharf, Boston, MA 02110",
+       "coordinates":[
+          42.3606,
+          -71.0495
+       ],
+       "type":[
+          "Seafood",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Scampi al Forno",
+             "price":26
+          },
+          {
+             "name":"Crab Stuffed Mushrooms",
+             "price":16
+          },
+          {
+             "name":"Salmon Teriyaki",
+             "price":27
+          }
+       ]
+    },
+    {
+       "name":"Atlantic Breeze",
+       "telephone":"(617)394-1298",
+       "address":"200 Pier Four Blvd, Boston, MA 02210",
+       "coordinates":[
+          42.3488,
+          -71.0420
+       ],
+       "type":[
+          "Seafood",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Lobster Risotto",
+             "price":34
+          },
+          {
+             "name":"Baked Scallops",
+             "price":29
+          },
+          {
+             "name":"Fried Clams",
+             "price":18
+          }
+       ]
+    },
+    {
+       "name":"The Wharf",
+       "telephone":"(617)282-4956",
+       "address":"100 Northern Ave, Boston, MA 02210",
+       "coordinates":[
+          42.3518,
+          -71.0430
+       ],
+       "type":[
+          "Seafood",
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Lobster Ravioli",
+             "price":32
+          },
+          {
+             "name":"Stuffed Sole",
+             "price":28
+          },
+          {
+             "name":"Fried Oysters",
+             "price":22
+          }
+       ]
+    },
+    {
+       "name":"Poseidon's Catch",
+       "telephone":"(617)356-5432",
+       "address":"84 Harrison Ave, Boston, MA 02111",
+       "coordinates":[
+          42.3500,
+          -71.0617
+       ],
+       "type":[
+          "Seafood",
+          "Asian Fusion"
+       ],
+       "dishes":[
+          {
+             "name":"Sea Bass",
+             "price":30
+          },
+          {
+             "name":"Crab Rangoon",
+             "price":14
+          },
+          {
+             "name":"Lobster Pot Pie",
+             "price":35
+          }
+       ]
+    },
+    {
+       "name":"Sea Breeze Cafe",
+       "telephone":"(617)432-7564",
+       "address":"75 Charles St S, Boston, MA 02116",
+       "coordinates":[
+          42.3510,
+          -71.0718
+       ],
+       "type":[
+          "Cafes",
+          "Breakfast"
+       ],
+       "dishes":[
+          {
+             "name":"Lobster Roll",
+             "price":28
+          },
+          {
+             "name":"Fish & Chips",
+             "price":20
+          },
+          {
+             "name":"Grilled Shrimp Skewers",
+             "price":24
+          }
+       ]
+    },
+    {
+       "name":"Wave Rider",
+       "telephone":"(617)897-4231",
+       "address":"343 Congress St, Boston, MA 02210",
+       "coordinates":[
+          42.3519,
+          -71.0496
+       ],
+       "type":[
+          "Seafood",
+          "Burgers"
+       ],
+       "dishes":[
+          {
+             "name":"Crispy Skin Salmon",
+             "price":26
+          },
+          {
+             "name":"Fried Soft Shell Crab",
+             "price":23
+          },
+          {
+             "name":"Seared Scallops",
+             "price":30
+          }
+       ]
+    },
+    {
+       "name":"Nautical Nook",
+       "telephone":"(617)590-9845",
+       "address":"150 Northern Ave, Boston, MA 02210",
+       "coordinates":[
+          42.3507,
+          -71.0481
+       ],
+       "type":[
+          "Seafood",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Lobster Bisque",
+             "price":18
+          },
+          {
+             "name":"Stuffed Lobster Tail",
+             "price":38
+          },
+          {
+             "name":"Fried Cod Sandwich",
+             "price":19
+          }
+       ]
+    },
+    {
+       "name":"Harbor Haven",
+       "telephone":"(617)492-3568",
+       "address":"60 State St, Boston, MA 02109",
+       "coordinates":[
+          42.3584,
+          -71.0571
+       ],
+       "type":[
+          "Seafood",
+          "Cafes"
+       ],
+       "dishes":[
+          {
+             "name":"Lobster Risotto",
+             "price":33
+          },
+          {
+             "name":"Grilled Swordfish",
+             "price":31
+          },
+          {
+             "name":"Crab Cake Benedict",
+             "price":21
+          }
+       ]
+    },
+    {
+       "name":"Seaside Spoon",
+       "telephone":"(617)214-8962",
+       "address":"175 Tremont St, Boston, MA 02111",
+       "coordinates":[
+          42.3533,
+          -71.0623
+       ],
+       "type":[
+          "Seafood",
+          "Desserts"
+       ],
+       "dishes":[
+          {
+             "name":"Pan-Seared Scallops",
+             "price":30
+          },
+          {
+             "name":"Shrimp Alfredo",
+             "price":28
+          },
+          {
+             "name":"Lobster Mac & Cheese",
+             "price":23
+          }
+       ]
+    },
+    {
+       "name":"Golden Dragon",
+       "telephone":"(617)412-7643",
+       "address":"500 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3500,
+          -71.0745
+       ],
+       "type":[
+          "Chinese"
+       ],
+       "dishes":[
+          {
+             "name":"General Tso's Chicken",
+             "price":14
+          },
+          {
+             "name":"Beef and Broccoli",
+             "price":16
+          },
+          {
+             "name":"Spring Rolls",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Spice Garden",
+       "telephone":"(617)789-4321",
+       "address":"200 Huntington Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3459,
+          -71.0847
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Chicken Tikka Masala",
+             "price":18
+          },
+          {
+             "name":"Lamb Vindaloo",
+             "price":20
+          },
+          {
+             "name":"Naan Bread",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Pizza Palace",
+       "telephone":"(617)456-7890",
+       "address":"400 Newbury St, Boston, MA 02115",
+       "coordinates":[
+          42.3489,
+          -71.0841
+       ],
+       "type":[
+          "Pizza",
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Margherita Pizza",
+             "price":15
+          },
+          {
+             "name":"Pepperoni Pizza",
+             "price":17
+          },
+          {
+             "name":"Garlic Knots",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Burger Haven",
+       "telephone":"(617)874-6532",
+       "address":"150 Tremont St, Boston, MA 02111",
+       "coordinates":[
+          42.3550,
+          -71.0625
+       ],
+       "type":[
+          "Burgers",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Cheeseburger",
+             "price":12
+          },
+          {
+             "name":"Bacon Burger",
+             "price":14
+          },
+          {
+             "name":"Sweet Potato Fries",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Curry House",
+       "telephone":"(617)523-4532",
+       "address":"210 Hanover St, Boston, MA 02113",
+       "coordinates":[
+          42.3635,
+          -71.0553
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Butter Chicken",
+             "price":17
+          },
+          {
+             "name":"Chana Masala",
+             "price":14
+          },
+          {
+             "name":"Biryani",
+             "price":16
+          }
+       ]
+    },
+    {
+       "name":"Sakura Sushi",
+       "telephone":"(617)978-4534",
+       "address":"230 Stuart St, Boston, MA 02116",
+       "coordinates":[
+          42.3514,
+          -71.0682
+       ],
+       "type":[
+          "Japanese",
+          "Sushi"
+       ],
+       "dishes":[
+          {
+             "name":"Spicy Tuna Roll",
+             "price":12
+          },
+          {
+             "name":"Sashimi Platter",
+             "price":24
+          },
+          {
+             "name":"Miso Soup",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Thai Spice",
+       "telephone":"(617)784-1234",
+       "address":"95 Milk St, Boston, MA 02109",
+       "coordinates":[
+          42.3572,
+          -71.0576
+       ],
+       "type":[
+          "Thai"
+       ],
+       "dishes":[
+          {
+             "name":"Pad Thai",
+             "price":14
+          },
+          {
+             "name":"Green Curry",
+             "price":16
+          },
+          {
+             "name":"Spring Rolls",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Korean BBQ House",
+       "telephone":"(617)412-9876",
+       "address":"120 Beverly St, Boston, MA 02114",
+       "coordinates":[
+          42.3642,
+          -71.0601
+       ],
+       "type":[
+          "Korean"
+       ],
+       "dishes":[
+          {
+             "name":"Bulgogi",
+             "price":18
+          },
+          {
+             "name":"Kimchi Stew",
+             "price":14
+          },
+          {
+             "name":"Bibimbap",
+             "price":16
+          }
+       ]
+    },
+    {
+       "name":"Café Dolce",
+       "telephone":"(617)783-2456",
+       "address":"60 Charles St, Boston, MA 02114",
+       "coordinates":[
+          42.3575,
+          -71.0700
+       ],
+       "type":[
+          "Cafes",
+          "Desserts"
+       ],
+       "dishes":[
+          {
+             "name":"Tiramisu",
+             "price":8
+          },
+          {
+             "name":"Cappuccino",
+             "price":4
+          },
+          {
+             "name":"Gelato",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Urban Greens",
+       "telephone":"(617)900-2345",
+       "address":"300 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3507,
+          -71.0782
+       ],
+       "type":[
+          "Salad",
+          "Healthy"
+       ],
+       "dishes":[
+          {
+             "name":"Quinoa Salad",
+             "price":12
+          },
+          {
+             "name":"Avocado Toast",
+             "price":10
+          },
+          {
+             "name":"Kale Caesar",
+             "price":13
+          }
+       ]
+    },
+    {
+       "name":"Pasta Bella",
+       "telephone":"(617)654-3232",
+       "address":"50 Huntington Ave, Boston, MA 02116",
+       "coordinates":[
+          42.3472,
+          -71.0814
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Spaghetti Carbonara",
+             "price":18
+          },
+          {
+             "name":"Lasagna",
+             "price":20
+          },
+          {
+             "name":"Garlic Bread",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Sunrise Bakery",
+       "telephone":"(617)823-3421",
+       "address":"230 Newbury St, Boston, MA 02116",
+       "coordinates":[
+          42.3496,
+          -71.0857
+       ],
+       "type":[
+          "Cafes",
+          "Desserts"
+       ],
+       "dishes":[
+          {
+             "name":"Croissant",
+             "price":4
+          },
+          {
+             "name":"Blueberry Muffin",
+             "price":3
+          },
+          {
+             "name":"Latte",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Taco Fiesta",
+       "telephone":"(617)741-5423",
+       "address":"250 Summer St, Boston, MA 02210",
+       "coordinates":[
+          42.3511,
+          -71.0540
+       ],
+       "type":[
+          "Mexican"
+       ],
+       "dishes":[
+          {
+             "name":"Beef Tacos",
+             "price":12
+          },
+          {
+             "name":"Chicken Quesadilla",
+             "price":14
+          },
+          {
+             "name":"Guacamole",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Bistro Bleu",
+       "telephone":"(617)873-9654",
+       "address":"40 State St, Boston, MA 02109",
+       "coordinates":[
+          42.3589,
+          -71.0571
+       ],
+       "type":[
+          "French",
+          "Cafes"
+       ],
+       "dishes":[
+          {
+             "name":"Croque Monsieur",
+             "price":14
+          },
+          {
+             "name":"French Onion Soup",
+             "price":10
+          },
+          {
+             "name":"Creme Brulee",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Golden Thai",
+       "telephone":"(617)965-7843",
+       "address":"330 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3573,
+          -71.0605
+       ],
+       "type":[
+          "Thai"
+       ],
+       "dishes":[
+          {
+             "name":"Pad See Ew",
+             "price":14
+          },
+          {
+             "name":"Massaman Curry",
+             "price":16
+          },
+          {
+             "name":"Mango Sticky Rice",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Café Fresco",
+       "telephone":"(617)432-7645",
+       "address":"90 Causeway St, Boston, MA 02114",
+       "coordinates":[
+          42.3662,
+          -71.0611
+       ],
+       "type":[
+          "Cafes",
+          "Healthy"
+       ],
+       "dishes":[
+          {
+             "name":"Acai Bowl",
+             "price":10
+          },
+          {
+             "name":"Smoothie",
+             "price":7
+          },
+          {
+             "name":"Grilled Chicken Wrap",
+             "price":12
+          }
+       ]
+    },
+    {
+       "name":"BBQ Masters",
+       "telephone":"(617)763-7842",
+       "address":"450 Tremont St, Boston, MA 02116",
+       "coordinates":[
+          42.3437,
+          -71.0693
+       ],
+       "type":[
+          "BBQ",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Pulled Pork Sandwich",
+             "price":14
+          },
+          {
+             "name":"BBQ Ribs",
+             "price":18
+          },
+          {
+             "name":"Coleslaw",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Dim Sum Delight",
+       "telephone":"(617)321-9845",
+       "address":"300 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3574,
+          -71.0603
+       ],
+       "type":[
+          "Chinese",
+          "Dim Sum"
+       ],
+       "dishes":[
+          {
+             "name":"Shrimp Dumplings",
+             "price":8
+          },
+          {
+             "name":"BBQ Pork Buns",
+             "price":7
+          },
+          {
+             "name":"Peking Duck",
+             "price":20
+          }
+       ]
+    },
+    {
+       "name":"Curry Pot",
+       "telephone":"(617)473-5632",
+       "address":"200 Massachusetts Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3466,
+          -71.0857
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Paneer Tikka",
+             "price":14
+          },
+          {
+             "name":"Goat Curry",
+             "price":18
+          },
+          {
+             "name":"Samosas",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Sushi Zen",
+       "telephone":"(617)983-7564",
+       "address":"350 Newbury St, Boston, MA 02116",
+       "coordinates":[
+          42.3487,
+          -71.0853
+       ],
+       "type":[
+          "Japanese",
+          "Sushi"
+       ],
+       "dishes":[
+          {
+             "name":"California Roll",
+             "price":10
+          },
+          {
+             "name":"Tempura Udon",
+             "price":14
+          },
+          {
+             "name":"Salmon Nigiri",
+             "price":12
+          }
+       ]
+    },
+    {
+       "name":"Bistro Italiano",
+       "telephone":"(617)523-9765",
+       "address":"200 Hanover St, Boston, MA 02113",
+       "coordinates":[
+          42.3634,
+          -71.0548
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Fettuccine Alfredo",
+             "price":18
+          },
+          {
+             "name":"Chicken Parmesan",
+             "price":20
+          },
+          {
+             "name":"Bruschetta",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Viva Burrito",
+       "telephone":"(617)753-5643",
+       "address":"300 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3575,
+          -71.0599
+       ],
+       "type":[
+          "Mexican"
+       ],
+       "dishes":[
+          {
+             "name":"Beef Burrito",
+             "price":12
+          },
+          {
+             "name":"Chicken Tacos",
+             "price":10
+          },
+          {
+             "name":"Churros",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Green Bowl",
+       "telephone":"(617)963-4567",
+       "address":"400 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3505,
+          -71.0769
+       ],
+       "type":[
+          "Salad",
+          "Healthy"
+       ],
+       "dishes":[
+          {
+             "name":"Spinach Salad",
+             "price":11
+          },
+          {
+             "name":"Quinoa Bowl",
+             "price":13
+          },
+          {
+             "name":"Avocado Toast",
+             "price":9
+          }
+       ]
+    },
+    {
+       "name":"Royal Thai",
+       "telephone":"(617)345-7864",
+       "address":"600 Newbury St, Boston, MA 02116",
+       "coordinates":[
+          42.3480,
+          -71.0851
+       ],
+       "type":[
+          "Thai"
+       ],
+       "dishes":[
+          {
+             "name":"Tom Yum Soup",
+             "price":10
+          },
+          {
+             "name":"Pad Thai",
+             "price":14
+          },
+          {
+             "name":"Red Curry",
+             "price":16
+          }
+       ]
+    },
+    {
+       "name":"Kimchi House",
+       "telephone":"(617)482-9876",
+       "address":"80 Harrison Ave, Boston, MA 02111",
+       "coordinates":[
+          42.3490,
+          -71.0613
+       ],
+       "type":[
+          "Korean"
+       ],
+       "dishes":[
+          {
+             "name":"Kimchi Fried Rice",
+             "price":14
+          },
+          {
+             "name":"Galbi",
+             "price":20
+          },
+          {
+             "name":"Japchae",
+             "price":16
+          }
+       ]
+    },
+    {
+       "name":"Pasta Fresca",
+       "telephone":"(617)783-8765",
+       "address":"350 Massachusetts Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3455,
+          -71.0880
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Spaghetti Bolognese",
+             "price":17
+          },
+          {
+             "name":"Pesto Penne",
+             "price":15
+          },
+          {
+             "name":"Garlic Bread",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Sunrise Café",
+       "telephone":"(617)984-5647",
+       "address":"120 Charles St, Boston, MA 02114",
+       "coordinates":[
+          42.3581,
+          -71.0698
+       ],
+       "type":[
+          "Cafes",
+          "Breakfast"
+       ],
+       "dishes":[
+          {
+             "name":"Eggs Benedict",
+             "price":12
+          },
+          {
+             "name":"Pancakes",
+             "price":10
+          },
+          {
+             "name":"Latte",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Burger Works",
+       "telephone":"(617)953-7854",
+       "address":"80 Cambridge St, Boston, MA 02114",
+       "coordinates":[
+          42.3601,
+          -71.0654
+       ],
+       "type":[
+          "Burgers",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Classic Burger",
+             "price":11
+          },
+          {
+             "name":"Bacon Cheeseburger",
+             "price":13
+          },
+          {
+             "name":"Fries",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Sushi Express",
+       "telephone":"(617)983-9876",
+       "address":"160 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3515,
+          -71.0658
+       ],
+       "type":[
+          "Japanese",
+          "Sushi"
+       ],
+       "dishes":[
+          {
+             "name":"Dragon Roll",
+             "price":14
+          },
+          {
+             "name":"Tuna Sashimi",
+             "price":20
+          },
+          {
+             "name":"Edamame",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Indian Delight",
+       "telephone":"(617)784-3567",
+       "address":"240 Huntington Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3449,
+          -71.0872
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Rogan Josh",
+             "price":18
+          },
+          {
+             "name":"Palak Paneer",
+             "price":15
+          },
+          {
+             "name":"Garlic Naan",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Peking Garden",
+       "telephone":"(617)675-9832",
+       "address":"50 Franklin St, Boston, MA 02110",
+       "coordinates":[
+          42.3571,
+          -71.0582
+       ],
+       "type":[
+          "Chinese"
+       ],
+       "dishes":[
+          {
+             "name":"Peking Duck",
+             "price":22
+          },
+          {
+             "name":"Kung Pao Chicken",
+             "price":16
+          },
+          {
+             "name":"Egg Drop Soup",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"La Dolce Vita",
+       "telephone":"(617)395-7843",
+       "address":"230 Newbury St, Boston, MA 02116",
+       "coordinates":[
+          42.3494,
+          -71.0849
+       ],
+       "type":[
+          "Italian",
+          "Desserts"
+       ],
+       "dishes":[
+          {
+             "name":"Tiramisu",
+             "price":8
+          },
+          {
+             "name":"Cannoli",
+             "price":5
+          },
+          {
+             "name":"Espresso",
+             "price":3
+          }
+       ]
+    },
+    {
+       "name":"BBQ Central",
+       "telephone":"(617)678-3456",
+       "address":"400 Stuart St, Boston, MA 02116",
+       "coordinates":[
+          42.3487,
+          -71.0735
+       ],
+       "type":[
+          "BBQ",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"BBQ Chicken",
+             "price":15
+          },
+          {
+             "name":"Pulled Pork",
+             "price":14
+          },
+          {
+             "name":"Cornbread",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Tokyo Bites",
+       "telephone":"(617)798-2345",
+       "address":"100 Clarendon St, Boston, MA 02116",
+       "coordinates":[
+          42.3496,
+          -71.0752
+       ],
+       "type":[
+          "Japanese"
+       ],
+       "dishes":[
+          {
+             "name":"Teriyaki Chicken",
+             "price":14
+          },
+          {
+             "name":"Gyoza",
+             "price":8
+          },
+          {
+             "name":"Mochi",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Vegan Delight",
+       "telephone":"(617)493-7843",
+       "address":"350 Congress St, Boston, MA 02210",
+       "coordinates":[
+          42.3513,
+          -71.0494
+       ],
+       "type":[
+          "Vegan",
+          "Healthy"
+       ],
+       "dishes":[
+          {
+             "name":"Vegan Burger",
+             "price":13
+          },
+          {
+             "name":"Quinoa Salad",
+             "price":11
+          },
+          {
+             "name":"Smoothie Bowl",
+             "price":10
+          }
+       ]
+    },
+    {
+       "name":"La Cucina",
+       "telephone":"(617)763-4563",
+       "address":"250 Summer St, Boston, MA 02210",
+       "coordinates":[
+          42.3515,
+          -71.0531
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Ravioli",
+             "price":18
+          },
+          {
+             "name":"Lasagna",
+             "price":20
+          },
+          {
+             "name":"Tiramisu",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Dim Sum Palace",
+       "telephone":"(617)832-5643",
+       "address":"80 Essex St, Boston, MA 02111",
+       "coordinates":[
+          42.3512,
+          -71.0600
+       ],
+       "type":[
+          "Chinese",
+          "Dim Sum"
+       ],
+       "dishes":[
+          {
+             "name":"Shrimp Dumplings",
+             "price":10
+          },
+          {
+             "name":"BBQ Pork Buns",
+             "price":9
+          },
+          {
+             "name":"Sticky Rice",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Pho Paradise",
+       "telephone":"(617)794-6573",
+       "address":"210 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3577,
+          -71.0593
+       ],
+       "type":[
+          "Vietnamese"
+       ],
+       "dishes":[
+          {
+             "name":"Beef Pho",
+             "price":12
+          },
+          {
+             "name":"Spring Rolls",
+             "price":7
+          },
+          {
+             "name":"Banh Mi",
+             "price":10
+          }
+       ]
+    },
+    {
+       "name":"Burger Joint",
+       "telephone":"(617)845-3764",
+       "address":"150 Milk St, Boston, MA 02109",
+       "coordinates":[
+          42.3579,
+          -71.0584
+       ],
+       "type":[
+          "Burgers",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Double Cheeseburger",
+             "price":13
+          },
+          {
+             "name":"Onion Rings",
+             "price":6
+          },
+          {
+             "name":"Milkshake",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Spice Route",
+       "telephone":"(617)912-5632",
+       "address":"100 Arlington St, Boston, MA 02116",
+       "coordinates":[
+          42.3498,
+          -71.0719
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Tandoori Chicken",
+             "price":16
+          },
+          {
+             "name":"Lamb Biryani",
+             "price":18
+          },
+          {
+             "name":"Raita",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Taco Loco",
+       "telephone":"(617)812-7645",
+       "address":"150 Tremont St, Boston, MA 02111",
+       "coordinates":[
+          42.3553,
+          -71.0627
+       ],
+       "type":[
+          "Mexican"
+       ],
+       "dishes":[
+          {
+             "name":"Fish Tacos",
+             "price":12
+          },
+          {
+             "name":"Chicken Enchiladas",
+             "price":14
+          },
+          {
+             "name":"Queso Dip",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Mediterranean Grill",
+       "telephone":"(617)654-9876",
+       "address":"200 Stuart St, Boston, MA 02116",
+       "coordinates":[
+          42.3517,
+          -71.0703
+       ],
+       "type":[
+          "Mediterranean"
+       ],
+       "dishes":[
+          {
+             "name":"Lamb Gyro",
+             "price":14
+          },
+          {
+             "name":"Falafel Plate",
+             "price":12
+          },
+          {
+             "name":"Hummus and Pita",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Curry Express",
+       "telephone":"(617)784-9821",
+       "address":"90 Summer St, Boston, MA 02110",
+       "coordinates":[
+          42.3546,
+          -71.0588
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Chicken Korma",
+             "price":17
+          },
+          {
+             "name":"Lamb Rogan Josh",
+             "price":19
+          },
+          {
+             "name":"Samosas",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Pizza Planet",
+       "telephone":"(617)432-7843",
+       "address":"150 Congress St, Boston, MA 02110",
+       "coordinates":[
+          42.3565,
+          -71.0541
+       ],
+       "type":[
+          "Pizza",
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Margherita Pizza",
+             "price":16
+          },
+          {
+             "name":"Hawaiian Pizza",
+             "price":18
+          },
+          {
+             "name":"Garlic Knots",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"BBQ Barn",
+       "telephone":"(617)794-6532",
+       "address":"300 Stuart St, Boston, MA 02116",
+       "coordinates":[
+          42.3509,
+          -71.0698
+       ],
+       "type":[
+          "BBQ",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Brisket Sandwich",
+             "price":15
+          },
+          {
+             "name":"Ribs",
+             "price":20
+          },
+          {
+             "name":"Mac and Cheese",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Pho House",
+       "telephone":"(617)845-7894",
+       "address":"75 Kneeland St, Boston, MA 02111",
+       "coordinates":[
+          42.3501,
+          -71.0619
+       ],
+       "type":[
+          "Vietnamese"
+       ],
+       "dishes":[
+          {
+             "name":"Chicken Pho",
+             "price":12
+          },
+          {
+             "name":"Spring Rolls",
+             "price":6
+          },
+          {
+             "name":"Vietnamese Iced Coffee",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Dim Sum Delight",
+       "telephone":"(617)965-7632",
+       "address":"200 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3578,
+          -71.0591
+       ],
+       "type":[
+          "Chinese",
+          "Dim Sum"
+       ],
+       "dishes":[
+          {
+             "name":"Pork Dumplings",
+             "price":10
+          },
+          {
+             "name":"Shrimp Shumai",
+             "price":12
+          },
+          {
+             "name":"Sesame Balls",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Café Bonjour",
+       "telephone":"(617)874-5634",
+       "address":"300 Newbury St, Boston, MA 02116",
+       "coordinates":[
+          42.3493,
+          -71.0854
+       ],
+       "type":[
+          "Cafes",
+          "French"
+       ],
+       "dishes":[
+          {
+             "name":"Croissant",
+             "price":4
+          },
+          {
+             "name":"Quiche Lorraine",
+             "price":10
+          },
+          {
+             "name":"Macarons",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Sushi Yama",
+       "telephone":"(617)983-7645",
+       "address":"100 Huntington Ave, Boston, MA 02116",
+       "coordinates":[
+          42.3458,
+          -71.0837
+       ],
+       "type":[
+          "Japanese",
+          "Sushi"
+       ],
+       "dishes":[
+          {
+             "name":"Salmon Roll",
+             "price":12
+          },
+          {
+             "name":"Tempura Shrimp",
+             "price":14
+          },
+          {
+             "name":"Miso Soup",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Burger Bistro",
+       "telephone":"(617)912-7654",
+       "address":"50 Cambridge St, Boston, MA 02114",
+       "coordinates":[
+          42.3611,
+          -71.0634
+       ],
+       "type":[
+          "Burgers",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"BBQ Bacon Burger",
+             "price":13
+          },
+          {
+             "name":"Veggie Burger",
+             "price":11
+          },
+          {
+             "name":"Onion Rings",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Spice of India",
+       "telephone":"(617)876-5342",
+       "address":"250 Tremont St, Boston, MA 02116",
+       "coordinates":[
+          42.3499,
+          -71.0642
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Butter Chicken",
+             "price":16
+          },
+          {
+             "name":"Paneer Tikka",
+             "price":14
+          },
+          {
+             "name":"Gulab Jamun",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Pasta Bella",
+       "telephone":"(617)763-9421",
+       "address":"150 Massachusetts Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3452,
+          -71.0889
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Penne Arrabbiata",
+             "price":17
+          },
+          {
+             "name":"Fettuccine Alfredo",
+             "price":18
+          },
+          {
+             "name":"Tiramisu",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Green Leaf",
+       "telephone":"(617)845-7832",
+       "address":"300 Huntington Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3448,
+          -71.0841
+       ],
+       "type":[
+          "Salad",
+          "Healthy"
+       ],
+       "dishes":[
+          {
+             "name":"Caesar Salad",
+             "price":12
+          },
+          {
+             "name":"Avocado Bowl",
+             "price":13
+          },
+          {
+             "name":"Smoothie",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Korean Kitchen",
+       "telephone":"(617)934-8763",
+       "address":"75 Charles St, Boston, MA 02114",
+       "coordinates":[
+          42.3586,
+          -71.0705
+       ],
+       "type":[
+          "Korean"
+       ],
+       "dishes":[
+          {
+             "name":"Bibimbap",
+             "price":14
+          },
+          {
+             "name":"Kimchi Pancake",
+             "price":12
+          },
+          {
+             "name":"Bulgogi",
+             "price":18
+          }
+       ]
+    },
+    {
+       "name":"Pizza Factory",
+       "telephone":"(617)892-4356",
+       "address":"500 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3503,
+          -71.0749
+       ],
+       "type":[
+          "Pizza"
+       ],
+       "dishes":[
+          {
+             "name":"Cheese Pizza",
+             "price":14
+          },
+          {
+             "name":"Pepperoni Pizza",
+             "price":16
+          },
+          {
+             "name":"Garlic Breadsticks",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Spice Thai",
+       "telephone":"(617)798-6543",
+       "address":"100 Federal St, Boston, MA 02110",
+       "coordinates":[
+          42.3557,
+          -71.0563
+       ],
+       "type":[
+          "Thai"
+       ],
+       "dishes":[
+          {
+             "name":"Pad See Ew",
+             "price":13
+          },
+          {
+             "name":"Green Curry",
+             "price":15
+          },
+          {
+             "name":"Mango Sticky Rice",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Cafe Latte",
+       "telephone":"(617)912-4567",
+       "address":"400 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3504,
+          -71.0751
+       ],
+       "type":[
+          "Cafes",
+          "Desserts"
+       ],
+       "dishes":[
+          {
+             "name":"Cappuccino",
+             "price":4
+          },
+          {
+             "name":"Blueberry Muffin",
+             "price":3
+          },
+          {
+             "name":"Chocolate Cake",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Pasta Fresco",
+       "telephone":"(617)894-7564",
+       "address":"60 Hanover St, Boston, MA 02113",
+       "coordinates":[
+          42.3631,
+          -71.0547
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Spaghetti Carbonara",
+             "price":18
+          },
+          {
+             "name":"Margherita Pizza",
+             "price":15
+          },
+          {
+             "name":"Panna Cotta",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Kebab King",
+       "telephone":"(617)912-8765",
+       "address":"250 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3576,
+          -71.0589
+       ],
+       "type":[
+          "Mediterranean"
+       ],
+       "dishes":[
+          {
+             "name":"Chicken Kebab",
+             "price":14
+          },
+          {
+             "name":"Falafel Wrap",
+             "price":12
+          },
+          {
+             "name":"Baklava",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Sushi House",
+       "telephone":"(617)963-8745",
+       "address":"50 Clarendon St, Boston, MA 02116",
+       "coordinates":[
+          42.3494,
+          -71.0738
+       ],
+       "type":[
+          "Japanese",
+          "Sushi"
+       ],
+       "dishes":[
+          {
+             "name":"California Roll",
+             "price":11
+          },
+          {
+             "name":"Salmon Sashimi",
+             "price":20
+          },
+          {
+             "name":"Tempura Udon",
+             "price":15
+          }
+       ]
+    },
+    {
+       "name":"Spicy Kitchen",
+       "telephone":"(617)912-8754",
+       "address":"200 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3510,
+          -71.0756
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Chicken Tikka Masala",
+             "price":17
+          },
+          {
+             "name":"Naan Bread",
+             "price":4
+          },
+          {
+             "name":"Lamb Vindaloo",
+             "price":19
+          }
+       ]
+    },
+    {
+       "name":"Burger Spot",
+       "telephone":"(617)923-5643",
+       "address":"150 Cambridge St, Boston, MA 02114",
+       "coordinates":[
+          42.3610,
+          -71.0657
+       ],
+       "type":[
+          "Burgers",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Cheeseburger",
+             "price":11
+          },
+          {
+             "name":"Bacon Double Cheeseburger",
+             "price":13
+          },
+          {
+             "name":"Fries",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"La Pizzeria",
+       "telephone":"(617)732-5467",
+       "address":"500 Huntington Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3418,
+          -71.0887
+       ],
+       "type":[
+          "Pizza",
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Four Cheese Pizza",
+             "price":15
+          },
+          {
+             "name":"Pepperoni Pizza",
+             "price":16
+          },
+          {
+             "name":"Garlic Knots",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Sushi Zen",
+       "telephone":"(617)432-9874",
+       "address":"120 Tremont St, Boston, MA 02108",
+       "coordinates":[
+          42.3572,
+          -71.0625
+       ],
+       "type":[
+          "Japanese",
+          "Sushi"
+       ],
+       "dishes":[
+          {
+             "name":"Tuna Roll",
+             "price":13
+          },
+          {
+             "name":"Sashimi Platter",
+             "price":24
+          },
+          {
+             "name":"Miso Soup",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Thai Basil",
+       "telephone":"(617)923-7864",
+       "address":"150 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3575,
+          -71.0585
+       ],
+       "type":[
+          "Thai"
+       ],
+       "dishes":[
+          {
+             "name":"Pad Thai",
+             "price":14
+          },
+          {
+             "name":"Tom Yum Soup",
+             "price":9
+          },
+          {
+             "name":"Green Curry",
+             "price":15
+          }
+       ]
+    },
+    {
+       "name":"Cafe Europa",
+       "telephone":"(617)798-4321",
+       "address":"300 Newbury St, Boston, MA 02116",
+       "coordinates":[
+          42.3491,
+          -71.0852
+       ],
+       "type":[
+          "Cafes",
+          "Desserts"
+       ],
+       "dishes":[
+          {
+             "name":"Espresso",
+             "price":4
+          },
+          {
+             "name":"Tiramisu",
+             "price":7
+          },
+          {
+             "name":"Cappuccino",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"BBQ Pit",
+       "telephone":"(617)876-7654",
+       "address":"75 Charles St, Boston, MA 02114",
+       "coordinates":[
+          42.3583,
+          -71.0702
+       ],
+       "type":[
+          "BBQ",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Pulled Pork Sandwich",
+             "price":13
+          },
+          {
+             "name":"BBQ Ribs",
+             "price":18
+          },
+          {
+             "name":"Coleslaw",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Dim Sum King",
+       "telephone":"(617)984-7832",
+       "address":"250 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3576,
+          -71.0592
+       ],
+       "type":[
+          "Chinese",
+          "Dim Sum"
+       ],
+       "dishes":[
+          {
+             "name":"Shrimp Dumplings",
+             "price":10
+          },
+          {
+             "name":"BBQ Pork Buns",
+             "price":9
+          },
+          {
+             "name":"Egg Tart",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Falafel Palace",
+       "telephone":"(617)763-9845",
+       "address":"150 Massachusetts Ave, Boston, MA 02115",
+       "coordinates":[
+          42.3460,
+          -71.0891
+       ],
+       "type":[
+          "Mediterranean"
+       ],
+       "dishes":[
+          {
+             "name":"Falafel Wrap",
+             "price":11
+          },
+          {
+             "name":"Hummus Plate",
+             "price":8
+          },
+          {
+             "name":"Baklava",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Pho 24",
+       "telephone":"(617)892-4536",
+       "address":"400 Boylston St, Boston, MA 02116",
+       "coordinates":[
+          42.3502,
+          -71.0750
+       ],
+       "type":[
+          "Vietnamese"
+       ],
+       "dishes":[
+          {
+             "name":"Beef Pho",
+             "price":13
+          },
+          {
+             "name":"Spring Rolls",
+             "price":6
+          },
+          {
+             "name":"Banh Mi",
+             "price":9
+          }
+       ]
+    },
+    {
+       "name":"Pasta Mia",
+       "telephone":"(617)845-7632",
+       "address":"100 Clarendon St, Boston, MA 02116",
+       "coordinates":[
+          42.3497,
+          -71.0753
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Spaghetti Carbonara",
+             "price":17
+          },
+          {
+             "name":"Margherita Pizza",
+             "price":15
+          },
+          {
+             "name":"Panna Cotta",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Taco Fiesta",
+       "telephone":"(617)943-7864",
+       "address":"200 Milk St, Boston, MA 02109",
+       "coordinates":[
+          42.3579,
+          -71.0581
+       ],
+       "type":[
+          "Mexican"
+       ],
+       "dishes":[
+          {
+             "name":"Chicken Tacos",
+             "price":10
+          },
+          {
+             "name":"Beef Burrito",
+             "price":12
+          },
+          {
+             "name":"Churros",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Kebab Corner",
+       "telephone":"(617)678-5643",
+       "address":"250 Congress St, Boston, MA 02210",
+       "coordinates":[
+          42.3516,
+          -71.0519
+       ],
+       "type":[
+          "Mediterranean"
+       ],
+       "dishes":[
+          {
+             "name":"Chicken Kebab",
+             "price":14
+          },
+          {
+             "name":"Falafel Plate",
+             "price":12
+          },
+          {
+             "name":"Hummus and Pita",
+             "price":7
+          }
+       ]
+    },
+    {
+       "name":"Cafe Bliss",
+       "telephone":"(617)789-4321",
+       "address":"75 Tremont St, Boston, MA 02108",
+       "coordinates":[
+          42.3565,
+          -71.0613
+       ],
+       "type":[
+          "Cafes",
+          "Healthy"
+       ],
+       "dishes":[
+          {
+             "name":"Acai Bowl",
+             "price":10
+          },
+          {
+             "name":"Smoothie",
+             "price":7
+          },
+          {
+             "name":"Avocado Toast",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Sushi House",
+       "telephone":"(617)843-7654",
+       "address":"60 Hanover St, Boston, MA 02113",
+       "coordinates":[
+          42.3632,
+          -71.0545
+       ],
+       "type":[
+          "Japanese",
+          "Sushi"
+       ],
+       "dishes":[
+          {
+             "name":"California Roll",
+             "price":11
+          },
+          {
+             "name":"Salmon Sashimi",
+             "price":20
+          },
+          {
+             "name":"Tempura Udon",
+             "price":15
+          }
+       ]
+    },
+    {
+       "name":"BBQ Shack",
+       "telephone":"(617)935-8765",
+       "address":"300 Congress St, Boston, MA 02210",
+       "coordinates":[
+          42.3510,
+          -71.0491
+       ],
+       "type":[
+          "BBQ",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"BBQ Brisket",
+             "price":17
+          },
+          {
+             "name":"Pulled Pork Sandwich",
+             "price":14
+          },
+          {
+             "name":"Cornbread",
+             "price":4
+          }
+       ]
+    },
+    {
+       "name":"Dim Sum House",
+       "telephone":"(617)978-7643",
+       "address":"150 Essex St, Boston, MA 02111",
+       "coordinates":[
+          42.3509,
+          -71.0599
+       ],
+       "type":[
+          "Chinese",
+          "Dim Sum"
+       ],
+       "dishes":[
+          {
+             "name":"Shrimp Dumplings",
+             "price":10
+          },
+          {
+             "name":"BBQ Pork Buns",
+             "price":9
+          },
+          {
+             "name":"Sticky Rice",
+             "price":8
+          }
+       ]
+    },
+    {
+       "name":"Pasta Fresco",
+       "telephone":"(617)784-7632",
+       "address":"120 Newbury St, Boston, MA 02116",
+       "coordinates":[
+          42.3496,
+          -71.0856
+       ],
+       "type":[
+          "Italian"
+       ],
+       "dishes":[
+          {
+             "name":"Fettuccine Alfredo",
+             "price":18
+          },
+          {
+             "name":"Lasagna",
+             "price":20
+          },
+          {
+             "name":"Garlic Bread",
+             "price":6
+          }
+       ]
+    },
+    {
+       "name":"Tandoori Flame",
+       "telephone":"(617)923-8764",
+       "address":"400 Washington St, Boston, MA 02108",
+       "coordinates":[
+          42.3568,
+          -71.0597
+       ],
+       "type":[
+          "Indian"
+       ],
+       "dishes":[
+          {
+             "name":"Tandoori Chicken",
+             "price":16
+          },
+          {
+             "name":"Lamb Biryani",
+             "price":18
+          },
+          {
+             "name":"Raita",
+             "price":5
+          }
+       ]
+    },
+    {
+       "name":"Burger Joint",
+       "telephone":"(617)902-3456",
+       "address":"300 Cambridge St, Boston, MA 02114",
+       "coordinates":[
+          42.3614,
+          -71.0662
+       ],
+       "type":[
+          "Burgers",
+          "American"
+       ],
+       "dishes":[
+          {
+             "name":"Double Cheeseburger",
+             "price":13
+          },
+          {
+             "name":"Onion Rings",
+             "price":6
+          },
+          {
+             "name":"Milkshake",
+             "price":5
+          }
+       ]
+    }
+ ]

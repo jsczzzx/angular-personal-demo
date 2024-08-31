@@ -22,7 +22,8 @@ import { CartComponent } from '../cart/cart.component';
 })
 export class FeedComponent implements OnInit {
 
-  restaurants: Restaurant[] = []
+  restaurants: Restaurant[] = [];
+
 
   address = '';
   curLocation!: GeolocationPosition;
@@ -44,6 +45,7 @@ export class FeedComponent implements OnInit {
     this.geolocationService.getCurrentLocation().subscribe(res=>{
       this.curLocation = res;
     });
+    
     this.orderService.getAllRestaurants().subscribe(res=>{
       this.restaurants = res;
     });

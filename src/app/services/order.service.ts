@@ -13,10 +13,13 @@ export class OrderService {
 
   apiUrl = 'http://localhost:5000'; 
 
+  jsonUrl = '../../assets/data/restaurants.json';
+
   constructor(private http: HttpClient) { }
 
   getAllRestaurants(): Observable<Restaurant[]> {
-    return this.http.get<Restaurant[]>(`${this.apiUrl}/restaurants`);
+    //return this.http.get<Restaurant[]>(`${this.apiUrl}/restaurants`);
+    return this.http.get<Restaurant[]>(`${this.jsonUrl}`);
   }
 
   private ordersSubject = new BehaviorSubject<Order[]>([]);

@@ -3,6 +3,7 @@ import { OrderService } from '../../services/order.service';
 import { AuthService } from '../../services/auth.service';
 import { Order } from '../../interfaces/order.interface';
 import { ButtonModule } from 'primeng/button';
+import { DynamicDialogConfig, DynamicDialogRef } from 'primeng/dynamicdialog';
 
 @Component({
   selector: 'app-cart',
@@ -17,9 +18,12 @@ export class CartComponent implements OnInit {
 
   sum: number = 0;
 
-  constructor(private orderService: OrderService, private authService: AuthService) {
-
-  }
+  constructor(
+    private orderService: OrderService, 
+    private authService: AuthService,    
+    public ref: DynamicDialogRef, 
+    public config: DynamicDialogConfig
+  ) {}
 
   ngOnInit(): void {
     this.orderService.getOrders().subscribe(res=>{
@@ -40,6 +44,9 @@ export class CartComponent implements OnInit {
         console.log(res);
       })
     }
+    this.orders = [];
+    this.sum = 0;
+    this.ref.close();
   }
 
   onClear() {
