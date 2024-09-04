@@ -22,6 +22,10 @@ export class OrderService {
     return this.http.get<Restaurant[]>(`${this.jsonUrl}`);
   }
 
+  searchRestaurants(query: string, latitude: number, longitude: number, page: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/restaurants/search?query=${query}&latitude=${latitude}&longitude=${longitude}&page=${page}`);
+  }
+
   private ordersSubject = new BehaviorSubject<Order[]>([]);
 
   // Add a new order to the array

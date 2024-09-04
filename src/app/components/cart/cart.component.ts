@@ -50,6 +50,7 @@ export class CartComponent implements OnInit {
   }
 
   onClear() {
+    this.orderService.clearOrders();
     this.orders = [];
     this.sum = 0;
   }

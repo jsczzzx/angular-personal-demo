@@ -1,20 +1,24 @@
-<p>{{config.data.restaurant.name}}</p>
-@for (item of config.data.restaurant.dishes; track item._id) {
-    <div class="row">
-        <div class="left">
-            <p>{{item.name}}: ${{item.price}}</p>
+<div class="container">
+    @if (currentCoordinate) {
+        <app-google-map [currentCoordinate]="currentCoordinate" [restaurantCoordinate]="restaurantCoordinate"></app-google-map>
+    }
+    <h4>{{config.data.restaurant.name}}</h4>
+    @for (item of config.data.restaurant.dishes; track item._id) {
+        <div class="row">
+            <div class="left">
+                <p>{{item.name}}: ${{item.price}}</p>
+            </div>
+            <div class="right">
+                <button (click)="decrement(item)">-</button>
+                <input type="number" [(ngModel)]="findOrderItem(item)!.quantity" />
+                <button (click)="increment(item)">+</button>
+            </div>
+    
         </div>
-        <div class="right">
-            <button (click)="decrement(item)">-</button>
-            <input type="number" [(ngModel)]="findOrderItem(item)!.quantity" />
-            <button (click)="increment(item)">+</button>
-        </div>
-
+    
+    }
+    <div class="button-container">
+        <p-button label="Add To Cart" (click)="submitOrder()"></p-button>
     </div>
-
-}
-<div class="button-container">
-    <p-button label="Add To Cart" (click)="submitOrder()"></p-button>
 </div>
 
-<p>{{totalPrice}}</p>

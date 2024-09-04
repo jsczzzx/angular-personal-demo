@@ -25,3 +25,9 @@ button {
     flex-basis: calc(50% - 20px); /* Each card will take up 50% of the width minus margin */
     margin: 10px; /* Add some margin between cards */
 }
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}

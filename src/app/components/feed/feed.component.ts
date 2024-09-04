@@ -10,7 +10,8 @@ import { OrderService } from '../../services/order.service';
 import { Restaurant } from '../../interfaces/restaurant.interface';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { CartComponent } from '../cart/cart.component';
-
+import { fromEvent, of } from "rxjs";
+import { debounce, debounceTime, map, switchMap } from "rxjs/operators";
 
 @Component({
   selector: 'app-feed',
@@ -22,9 +23,9 @@ import { CartComponent } from '../cart/cart.component';
 })
 export class FeedComponent implements OnInit {
 
-  restaurants: Restaurant[] = [];
+  searchResults: any[] = [];
 
-
+  dev: boolean = false;
   address = '';
   curLocation!: GeolocationPosition;
 
@@ -46,16 +47,28 @@ export class FeedComponent implements OnInit {
       this.curLocation = res;
     });
     
-    this.orderService.getAllRestaurants().subscribe(res=>{
+    /*this.orderService.getAllRestaurants().subscribe(res=>{
       this.restaurants = res;
-    });
+    });*/
 
     let userId = this.authService.getUserIdFromToken(localStorage.getItem('token')!);
     this.authService.getUserById(userId).subscribe(res=>{
       localStorage.setItem('userName', res.userName);
     });
 
+    const searchBarInput = document.querySelector('input')  as HTMLInputElement ;
+    fromEvent(searchBarInput, 'keyup').pipe(
+      debounceTime(300),
+      map((event: Event) => (event.target as HTMLInputElement).value),
+      switchMap((value)=>this.orderService.searchRestaurants(value, this.curLocation.coords.latitude, this.curLocation.coords.longitude, 1))
+    ).subscribe((res)=>{
+      //alert(JSON.stringify(res));
+      this.searchResults = res;
+    });
+
   }
+
+
 
   onLogout() {
     this.router.navigate(['/']);
@@ -82,11 +95,11 @@ export class FeedComponent implements OnInit {
   }
 
   onRegisterRestaurants() {
-    for (let i = 0; i < this.restaurants.length; i++) {
+    /*for (let i = 0; i < this.restaurants.length; i++) {
       this.adminService.registerRestaurants(this.restaurants[i]).subscribe((res)=>{
         console.log('success');
       })
-    }
+    }*/
   }
 
   onCartClicked() {

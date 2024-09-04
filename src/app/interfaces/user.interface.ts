@@ -3,5 +3,6 @@ export interface User {
     userName: string,
     mobile_no: string,
     email: string,
+    address: string,
     password: string,
 }

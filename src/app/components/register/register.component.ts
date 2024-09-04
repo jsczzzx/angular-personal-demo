@@ -21,6 +21,7 @@ export class RegisterComponent implements OnInit {
       userName: ['', Validators.required],
       mobile_no: ['', [Validators.required, Validators.pattern('^[0-9]*$')]],
       email: ['', [Validators.required, Validators.email]],
+      address: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirm_password: ['', Validators.required]
     }, { validators: this.passwordMatchValidator() });  // Apply the custom validator here

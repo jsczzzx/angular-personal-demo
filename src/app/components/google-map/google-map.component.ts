@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { CommonModule } from '@angular/common';
-import { Restaurant } from '../../interfaces/restaurant.interface';
-import { OrderService } from '../../services/order.service';
+import { Coordinate } from '../../interfaces/coordinate.interface';
+
 
 @Component({
   selector: 'app-google-map',
@@ -12,10 +12,18 @@ import { OrderService } from '../../services/order.service';
   styleUrls: ['./google-map.component.css']
 })
 export class GoogleMapComponent implements OnInit {
-  zoom = 12;
+
+  @Input()
+  currentCoordinate!: Coordinate;
+
+  @Input()
+  restaurantCoordinate!: Coordinate;
+
+  zoom = 11;
   center!: google.maps.LatLngLiteral;
   currentLocationMarker!: google.maps.MarkerOptions;
   locationMarkers: google.maps.MarkerOptions[] = [];
+
   mapOptions: google.maps.MapOptions = {
     zoomControl: false, // Disable the default zoom control
     scrollwheel: false,
@@ -23,52 +31,25 @@ export class GoogleMapComponent implements OnInit {
     mapTypeId: 'roadmap',
   };
 
-  restaurants: Restaurant[] = [];
-
-  constructor(private orderService: OrderService) {}
-
   ngOnInit() {
-    this.orderService.getAllRestaurants().subscribe(res=>{
-      this.restaurants = res;
-      this.getCurrentLocation();
-      this.loadMarkers();
-    });
-  }
+    this.center = {
+      lat: (this.currentCoordinate.lat + this.restaurantCoordinate.lat) / 2.0,
+      lng: (this.currentCoordinate.lng + this.restaurantCoordinate.lng) / 2.0
+    };
+    this.currentLocationMarker = {
+      position: this.currentCoordinate,
+      icon: {
+        url: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+      }
+    };
 
-  getCurrentLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        this.center = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-
-        // Set the current location marker with a custom blue icon
-        this.currentLocationMarker = {
-          position: this.center,
-          icon: {
-            url: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
-          }
-        };
-      }, () => {
-        console.error('Geolocation service failed.');
-      });
-    } else {
-      console.error('Your browser does not support geolocation.');
+    let restaurantLocationMarker = {
+      position: this.restaurantCoordinate,
+      icon: {
+        url: 'http://maps.google.com/mapfiles/ms/icons/restaurant.png'  // Custom red icon for locations
+      }
     }
-  }
-
-  // Convert addresses to lat/lng and create markers
-  loadMarkers() {
-    //alert(JSON.stringify(this.restaurants))
-    this.restaurants.forEach((item) => {
-      this.locationMarkers.push({
-        position: { lat: item.coordinates[0], lng: item.coordinates[1] },
-          icon: {
-            url: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'  // Custom red icon for locations
-          }
-        });
-    });
+    this.locationMarkers.push(restaurantLocationMarker);
   }
 
   // Zoom in function
@@ -85,3 +66,4 @@ export class GoogleMapComponent implements OnInit {
     }
   }
 }
+

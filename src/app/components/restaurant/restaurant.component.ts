@@ -20,9 +20,7 @@ export class RestaurantComponent implements OnInit {
   restaurant!: Restaurant;
 
   @Input()
-  curLocation!: GeolocationPosition;
-
-  distance!: string;
+  distance!: number;
 
   ref: DynamicDialogRef | undefined;
 
@@ -31,12 +29,9 @@ export class RestaurantComponent implements OnInit {
   constructor(private geoLocationService: GeolocationService, private dialogService: DialogService) {}
 
   ngOnInit(): void {
-    //alert(JSON.stringify(this.curLocation))
-    this.geoLocationService.getDistance(this.curLocation, this.restaurant.address).subscribe(res=>{
-      //alert(JSON.stringify(this.curLocation));
-      this.distance = res.toFixed(1);
-    })
+
     this.imageSrc = this.getRandomImage();
+    this.distance = Number(this.distance.toFixed(1));
   }
 
   // Function to generate a random image path
