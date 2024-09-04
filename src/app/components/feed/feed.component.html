@@ -8,11 +8,11 @@
 <div class="container">
     @if (curLocation) {
         <div class="restaurant-cards">
-
             @for (item of searchResults; track item) {
                 <app-restaurant [restaurant]="item['restaurant']" [distance]="item['distance']"></app-restaurant>
             }
         </div>
+        <button (click)="loadMoreData()">Load More</button>
     }
     
     

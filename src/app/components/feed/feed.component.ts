@@ -24,6 +24,7 @@ import { debounce, debounceTime, map, switchMap } from "rxjs/operators";
 export class FeedComponent implements OnInit {
 
   searchResults: any[] = [];
+  currentPage: number = 1;
 
   dev: boolean = false;
   address = '';
@@ -54,20 +55,53 @@ export class FeedComponent implements OnInit {
     let userId = this.authService.getUserIdFromToken(localStorage.getItem('token')!);
     this.authService.getUserById(userId).subscribe(res=>{
       localStorage.setItem('userName', res.userName);
+      localStorage.setItem('userAddress', res.userName);
+
     });
 
-    const searchBarInput = document.querySelector('input')  as HTMLInputElement ;
-    fromEvent(searchBarInput, 'keyup').pipe(
-      debounceTime(300),
-      map((event: Event) => (event.target as HTMLInputElement).value),
-      switchMap((value)=>this.orderService.searchRestaurants(value, this.curLocation.coords.latitude, this.curLocation.coords.longitude, 1))
-    ).subscribe((res)=>{
-      //alert(JSON.stringify(res));
-      this.searchResults = res;
-    });
+    this.loadData();
 
   }
 
+  // Method to load data based on user input
+  loadData() {
+    const searchBarInput = document.querySelector('input') as HTMLInputElement;
+
+    fromEvent(searchBarInput, 'keyup').pipe(
+      debounceTime(300),
+      map((event: Event) => (event.target as HTMLInputElement).value),
+      switchMap((value) => {
+        this.currentPage = 1; // Reset to page 1 when a new search is initiated
+        this.searchResults = []; // Clear previous results
+        return this.orderService.searchRestaurants(
+          value,
+          this.curLocation.coords.latitude,
+          this.curLocation.coords.longitude,
+          this.currentPage
+        );
+      })
+    ).subscribe((res) => {
+      this.searchResults = res; // Load the first page of search results
+    });
+  }
+
+  // Method to load the next page of data when 'Load More' is clicked
+  loadMoreData() {
+    const searchBarInput = document.querySelector('input') as HTMLInputElement;
+    const searchTerm = searchBarInput.value;
+
+    this.currentPage++; // Increment the page number
+
+    this.orderService.searchRestaurants(
+      searchTerm,
+      this.curLocation.coords.latitude,
+      this.curLocation.coords.longitude,
+      this.currentPage
+    ).subscribe((res) => {
+      // Append the next page of results to the existing search results
+      this.searchResults = [...this.searchResults, ...res];
+    });
+  }
 
 
   onLogout() {
