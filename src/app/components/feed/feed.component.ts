@@ -23,7 +23,7 @@ import { debounce, debounceTime, map, switchMap } from "rxjs/operators";
 })
 export class FeedComponent implements OnInit {
 
-  searchResults: any[] = [];
+  searchResults!: any[];
   currentPage: number = 1;
 
   dev: boolean = false;

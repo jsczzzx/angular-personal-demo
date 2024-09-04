@@ -12,7 +12,9 @@
                 <app-restaurant [restaurant]="item['restaurant']" [distance]="item['distance']"></app-restaurant>
             }
         </div>
-        <button (click)="loadMoreData()">Load More</button>
+        @if (searchResults) {
+            <button (click)="loadMoreData()">Load More</button>
+        }
     }
     
     

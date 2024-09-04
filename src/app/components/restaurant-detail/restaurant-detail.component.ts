@@ -98,7 +98,7 @@ export class RestaurantDetailComponent implements OnInit {
     };
 
     // Submit the order (assuming you have a service to handle the submission)
-    alert(JSON.stringify(order));
+    //alert(JSON.stringify(order));
     this.orderService.addOrder(order);
     this.ref.close();
     //alert(JSON.stringify(this.config.data));
