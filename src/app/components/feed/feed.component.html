@@ -2,43 +2,17 @@
     <input >
     <button (click)="onCartClicked()">Cart</button>
     <button (click)="onLogout()">Log out</button>
-
 </div>
 
-<div class="container">
+<div class="container" >
     @if (curLocation) {
-        <div class="restaurant-cards">
+        <div class="restaurant-cards" (scroll)="onScroll($event)">
             @for (item of searchResults; track item) {
                 <app-restaurant [restaurant]="item['restaurant']" [distance]="item['distance']"></app-restaurant>
             }
         </div>
-        @if (searchResults) {
-            <button (click)="loadMoreData()">Load More</button>
-        }
+
     }
-    
-    
-    @if (dev) {
-        <button (click)="onGetAllUser()">Get All Users</button>
-    
-        <button (click)="onGetToken()">Get Token</button>
-        
-        <button (click)="onGetLocation()">Get Location</button>
-    
-        <button (click)="onRegisterRestaurants()">Upload Restaurants</button>
-
-        <div>
-            <form (ngSubmit)="onSubmit()">
-              <input type="text" [(ngModel)]="address" name="inputValue" placeholder="Enter something" required>
-              <button type="submit">Submit</button>
-            </form>
-        </div>
-    }
-
-
-
-
-    
 
 </div>
 

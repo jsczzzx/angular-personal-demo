@@ -24,8 +24,5 @@ export const routes: Routes = [
         component: FeedComponent,
         canActivate: [AuthGuard]
     },
-    {
-        path: 'hero',
-        component: HeroComponent
-    }
+
 ];

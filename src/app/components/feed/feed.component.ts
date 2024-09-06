@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
@@ -85,8 +85,19 @@ export class FeedComponent implements OnInit {
     });
   }
 
-  // Method to load the next page of data when 'Load More' is clicked
+  onScroll(event: Event) {
+    const element = event.target as HTMLElement;
+
+
+    console.log(Math.round(element.scrollTop + element.clientHeight) - element.scrollHeight)
+    if (Math.round(element.scrollTop + element.clientHeight) + 1 === element.scrollHeight) {
+      
+      this.loadMoreData();
+    }
+  }
+
   loadMoreData() {
+
     const searchBarInput = document.querySelector('input') as HTMLInputElement;
     const searchTerm = searchBarInput.value;
 

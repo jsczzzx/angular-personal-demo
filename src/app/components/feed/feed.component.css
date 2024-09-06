@@ -18,7 +18,8 @@ button {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of items */
     justify-content: space-around; /* Align items with space around */
-    max-width: 1000px; /* Adjust width based on your preference */
+    overflow-y: auto;
+    height: 1000px;
 }
 
 .restaurant-cards app-restaurant {
